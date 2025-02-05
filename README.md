@@ -1,16 +1,24 @@
-# groceryapp
+# 🛒 Grocery Finder App  
 
-A new Flutter project.
+A Flutter-based grocery shopping app designed to help users find nearby restaurants and shops based on item categories. When users select a category, the app displays relevant stores on **Google Maps** with pricing, images, and ratings. Users can tap on a shop to view available items and place orders seamlessly.  
 
-## Getting Started
+## ✨ Features  
 
-This project is a starting point for a Flutter application.
+- **🗺 Google Maps Integration** – Shows nearby shops based on selected item categories.  
+- **📦 Dynamic Item Listings** – Displays products, ratings, and prices for each shop.  
+- **🏬 Shop Selection** – Users can tap on a store on the map to view available items.  
+- **🔍 Search & Filter** – Allows users to search for specific items across multiple stores.  
+- **🛍 Order System** – Enables users to order from selected stores.  
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠 Tech Stack  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Frontend:** Flutter (Dart)  
+- **Backend:** -
+- **Database:** -
+- **Maps & Location:** Google Maps API, Geolocation  
+- **Authentication:** -
+- **Cloud Storage:** -
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+> 📌 *This project aims to enhance the way users shop for groceries by leveraging location-based search and a seamless ordering experience.*

@@ -9,15 +9,27 @@ class RatingItem extends StatefulWidget {
       this.ratingitemborderradius,
       this.ratingamount = "null",
       this.ratingitemcolor = Colors.black,
-      this.ratingitemiconcolor = Colors.black});
+      this.ratingitemiconcolor = Colors.black,
+      this.ratingitemicon = Icons.star_rate,
+      this.ratingitemiconsize = 20,
+      this.ratingitemfontwieght = FontWeight.bold,
+      this.ratingitemfontsize = 16,
+      this.ratingitempaddingfont = 2});
 
   final double ratingitemwidth;
   final double ratingitemheight;
   final Color? ratingitembgcolor;
   final BorderRadiusGeometry? ratingitemborderradius;
+
   final String ratingamount;
   final Color? ratingitemcolor;
+  final FontWeight? ratingitemfontwieght;
+  final double ratingitemfontsize;
+  final double ratingitempaddingfont;
+
   final Color? ratingitemiconcolor;
+  final IconData? ratingitemicon;
+  final double ratingitemiconsize;
 
   @override
   State<RatingItem> createState() => _RatingItemState();
@@ -40,18 +52,21 @@ class _RatingItemState extends State<RatingItem> {
             Align(
               alignment: Alignment.center,
               child: Icon(
-                Icons.star_rate,
+                widget.ratingitemicon,
                 color: widget.ratingitemiconcolor,
-                size: 20,
+                size: widget.ratingitemiconsize,
               ),
             ),
-            Text(
-              widget.ratingamount,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                  color: widget.ratingitemcolor,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 16),
+            Padding(
+              padding: EdgeInsets.only(left: widget.ratingitempaddingfont),
+              child: Text(
+                widget.ratingamount,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    color: widget.ratingitemcolor,
+                    fontWeight: widget.ratingitemfontwieght,
+                    fontSize: widget.ratingitemfontsize),
+              ),
             ),
           ],
         ),

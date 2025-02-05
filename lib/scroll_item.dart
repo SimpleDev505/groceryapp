@@ -92,7 +92,6 @@ Route _createroute(Widget child) {
   return PageRouteBuilder(
     pageBuilder: (context, animation, secondaryAnimation) => child,
     transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      FocusScope.of(context).unfocus();
       const begin = Offset(1, 0);
       const end = Offset.zero;
       const curve = Curves.decelerate;
